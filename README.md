@@ -53,7 +53,8 @@ The script executes the following operations:
 	 
  and link them together using a network named `project_project`.
 6. Once the containers were launched a new docker temp container starts to import the test_db into the database container then it gets removed.
----
+
+-----
 Diagram
 -------
 ```sequence

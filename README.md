@@ -32,12 +32,12 @@ To test the web app browse or curl your host ip address it should redirect you t
 -----------
 Built with
 ----------
-[saltstack bootstrap installation](https://docs.saltstack.com/en/latest/topics/tutorials/salt_bootstrap.html)
-[saltstack docker installation formula](https://github.com/saltstack-formulas/docker-formula)
-[docker compose](https://docs.docker.com/compose/compose-file/)
-[docker nginx-fpm container](https://hub.docker.com/r/richarvey/nginx-php-fpm/)
-[docker mysql container](https://hub.docker.com/_/mysql/)
-[test database](https://github.com/datacharmer/test_db)
+[saltstack bootstrap installation](https://docs.saltstack.com/en/latest/topics/tutorials/salt_bootstrap.html) \n
+[saltstack docker installation formula](https://github.com/saltstack-formulas/docker-formula) \n
+[docker compose](https://docs.docker.com/compose/compose-file/) \n
+[docker nginx-fpm container](https://hub.docker.com/r/richarvey/nginx-php-fpm/) \n
+[docker mysql container](https://hub.docker.com/_/mysql/) \n
+[test database](https://github.com/datacharmer/test_db) \n
 
 ----------
 Detailed Info

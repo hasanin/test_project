@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  web:
+    image: richarvey/nginx-php-fpm:latest
+    depends_on:
+      - database
+    environment:
+      - WEBROOT=/var/www/html
+    links:
+      - database:3306
+    networks:
+      - project
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/www/html:/var/www/html
+  database:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    expose:
+      - "3306"
+    networks:
+      - project
+networks:
+  project:

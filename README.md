@@ -55,20 +55,6 @@ The script executes the following operations:
 6. Once the containers were launched a new docker temp container starts to import the test_db into the database container then it gets removed.
 
 -----
-Diagram
--------
-```sequence
-visitor->Host:browse port 80
-Note right of Host:We share /var/www/html
-Host-->web:That's for you
-Note right of web:I am linked with database
-web-->database:query
-database-->web:here you go
-web-->Host:just deliver this
-Host->visitor:index.php
-
-```
------
 Issues
 -----
 This project is built for lab-only usage, **Do not** run this on a production machine, no security was put in mind during the writing of this project, for example mysql root password is used in clear commands and in the docker-compose.yml file, again security was not being considered during writing this.

@@ -10,7 +10,7 @@ To build and start the project clone the repo to your local machine using:
  change directory to the project dir,
  then make the build.sh file executable and run it:
 ```
-#cd project
+#cd test_project
 #chmod +x build.sh
 #./build.sh
 ```

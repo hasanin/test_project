@@ -25,6 +25,7 @@ then
 fi
 # copy states and resources then start them
 cp -Pav "$DIR/docker-formula/docker/" "$DIR/resources.sls" "$DIR/top.sls" "$DIR/resources/" /srv/salt/
+echo "Installing docker and docker compose, please be patient this may take a while"
 salt-call state.highstate
 # start the docker containers
 docker-compose -p project up -d
